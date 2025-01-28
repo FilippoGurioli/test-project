@@ -1,5 +1,5 @@
 var publishCmd = `
-IMAGE_NAME="andreabiagini5/asw"
+IMAGE_NAME="filippogurili/test-project"
 docker build -t "$IMAGE_NAME:\${nextRelease.version}" .
 docker push --all-tags "$IMAGE_NAME"
 `
