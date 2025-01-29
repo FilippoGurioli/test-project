@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/FilippoGurioli/test-project/compare/1.0.0...1.1.0) (2025-01-29)
+
+### Features
+
+* added stuff in order to enable publishing to npm ([647d855](https://github.com/FilippoGurioli/test-project/commit/647d855ad374ce1374af916daad5a50c8f190a95))
+
 ## 1.0.0 (2025-01-29)
 
 ### ⚠ BREAKING CHANGES
