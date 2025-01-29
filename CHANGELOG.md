@@ -1,3 +1,13 @@
+## [1.2.1](https://github.com/FilippoGurioli/test-project/compare/1.2.0...1.2.1) (2025-01-29)
+
+### Bug Fixes
+
+* update package so that is a scoped package ([4486229](https://github.com/FilippoGurioli/test-project/commit/4486229da84e33a17ac970ed31fab76d2fec9a38))
+
+### General maintenance
+
+* fixed merge conflicts ([5af7c39](https://github.com/FilippoGurioli/test-project/commit/5af7c39807e0adb6ee2b44a6b91e12198f002e51))
+
 ## [1.2.0](https://github.com/FilippoGurioli/test-project/compare/1.1.0...1.2.0) (2025-01-29)
 
 ### Features
