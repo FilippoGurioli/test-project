@@ -1,3 +1,13 @@
+## [1.2.0](https://github.com/FilippoGurioli/test-project/compare/1.1.0...1.2.0) (2025-01-29)
+
+### Features
+
+* empty commit to trigger semantic-release ([81fe324](https://github.com/FilippoGurioli/test-project/commit/81fe324578f17979886ecb7be9f6d50f1448afd5))
+
+### General maintenance
+
+* empty commit to trigger semantic-release ([c92073a](https://github.com/FilippoGurioli/test-project/commit/c92073a140bf3520453d91c13ec167ab29846a8a))
+
 ## [1.1.0](https://github.com/FilippoGurioli/test-project/compare/1.0.0...1.1.0) (2025-01-29)
 
 ### Features
