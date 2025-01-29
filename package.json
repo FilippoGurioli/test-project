@@ -1,5 +1,5 @@
 {
-  "name": "test-project",
+  "name": "@filippogurioli/test-project",
   "description": "A test project for semantic-release",
   "publishConfig": {
     "access": "public"
@@ -9,5 +9,5 @@
     "semantic-release": "^24.2.1",
     "semantic-release-preconfigured-conventional-commits": "latest"
   },
-  "version": "1.2.0"
+  "version": "1.1.0"
 }
