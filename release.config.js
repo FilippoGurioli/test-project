@@ -5,6 +5,7 @@ docker push --all-tags "$IMAGE_NAME"
 `
 var config = require('semantic-release-preconfigured-conventional-commits');
 config.plugins.push(
+    "@semantic-release/npm",
     [
         "@semantic-release/exec",
         {

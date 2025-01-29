@@ -1,4 +1,10 @@
 {
+  "name": "test-project",
+  "description": "A test project for semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
+  "private": false,
   "devDependencies": {
     "semantic-release": "^24.2.1",
     "semantic-release-preconfigured-conventional-commits": "latest"
