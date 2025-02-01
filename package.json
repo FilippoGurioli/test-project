@@ -10,5 +10,11 @@
     "semantic-release-preconfigured-conventional-commits": "latest",
     "sonarqube-scanner": "^4.2.6"
   },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  },
   "version": "1.2.1"
 }
