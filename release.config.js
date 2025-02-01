@@ -1,9 +1,9 @@
-var publishCmd = `
+const publishCmd = `
 IMAGE_NAME="filippogurioli/test-project"
 docker build -t "$IMAGE_NAME:\${nextRelease.version}" .
 docker push --all-tags "$IMAGE_NAME"
 `
-var config = require('semantic-release-preconfigured-conventional-commits');
+let config = require('semantic-release-preconfigured-conventional-commits');
 config.plugins.push(
     "@semantic-release/npm",
     [
