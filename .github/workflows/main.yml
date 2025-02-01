@@ -30,7 +30,9 @@ jobs:
         run: npm test -- --coverage
 
       - name: Run SonarCloud Analysis
-        run: npx sonarqube-scanner
+        run: |
+          npx sonarqube-scanner \
+            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
 
   release:
     runs-on: ubuntu-latest
