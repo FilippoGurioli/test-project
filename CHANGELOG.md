@@ -1,3 +1,25 @@
+## [1.2.2](https://github.com/FilippoGurioli/test-project/compare/1.2.1...1.2.2) (2025-02-01)
+
+### Documentation
+
+* add readme ([7e39c34](https://github.com/FilippoGurioli/test-project/commit/7e39c347c68ea985423b434b77428671052f61eb))
+
+### Build and continuous integration
+
+* add sonarcloud job to ci cd pipeline ([c1d3fff](https://github.com/FilippoGurioli/test-project/commit/c1d3fffb7e41eb1419fd3b09e5f26fbab46708a6))
+* add sonarcloud to project ([786fae9](https://github.com/FilippoGurioli/test-project/commit/786fae994c893aeee0df5ace06570cd9392cf463))
+* add template script and a test ([08ddaa1](https://github.com/FilippoGurioli/test-project/commit/08ddaa168165cfde49f7d20bfcdff5fbf92fad73))
+* correct organization key ([04b8e37](https://github.com/FilippoGurioli/test-project/commit/04b8e37d62a2147450cb40227e6b13d3de84ec98))
+* correct organization key ([5023351](https://github.com/FilippoGurioli/test-project/commit/502335175059c6de0f210c23cd35ffc16087ba54))
+
+### Style improvements
+
+* change var -> let ([42c124f](https://github.com/FilippoGurioli/test-project/commit/42c124f55676f5aef870e32175b39cf4df2cb600))
+
+### Refactoring
+
+* typo ([078a248](https://github.com/FilippoGurioli/test-project/commit/078a24860709ef85e87b211f96bf462e8d1da978))
+
 ## [1.2.1](https://github.com/FilippoGurioli/test-project/compare/1.2.0...1.2.1) (2025-01-29)
 
 ### Bug Fixes
