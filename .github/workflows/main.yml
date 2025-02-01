@@ -2,10 +2,6 @@ name: TEST CI/CD
 
 on:
   push:
-    # branches:
-    #   - dev
-    #   - main
-    #   - ci
   workflow_dispatch:
   pull_request:
 
@@ -34,12 +30,7 @@ jobs:
         run: npm test -- --coverage
 
       - name: Run SonarCloud Analysis
-        run: |
-          npx sonarqube-scanner \
-            -Dsonar.projectKey=FilippoGurioli_test-project \
-            -Dsonar.organization=filippogurioli \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+        run: npx sonarqube-scanner
 
   release:
     runs-on: ubuntu-latest
