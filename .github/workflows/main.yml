@@ -37,7 +37,7 @@ jobs:
         run: |
           npx sonarqube-scanner \
             -Dsonar.projectKey=FilippoGurioli_test-project \
-            -Dsonar.organization=FilippoGurioli \
+            -Dsonar.organization=filippogurioli \
             -Dsonar.host.url=https://sonarcloud.io \
             -Dsonar.token=${{ secrets.SONAR_TOKEN }}
 
