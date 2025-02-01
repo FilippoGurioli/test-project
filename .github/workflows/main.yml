@@ -7,6 +7,7 @@ on:
     #   - main
     #   - ci
   workflow_dispatch:
+  pull_request:
 
 concurrency:
   group: "test-ci-cd"
@@ -19,11 +20,31 @@ permissions:
   checks: write
 
 jobs:
+  sonarcloud:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Tests & Collect Coverage
+        run: npm test -- --coverage
+
+      - name: Run SonarCloud Analysis
+        run: |
+          npx sonarqube-scanner \
+            -Dsonar.projectKey=FilippoGurioli_test-project \
+            -Dsonar.organization=FilippoGurioli \
+            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.token=${{ secrets.SONAR_TOKEN }}
+
   release:
     runs-on: ubuntu-latest
-    # needs: 
-    #   - build
-    #   - test
+    needs:
+      - sonarcloud
     name: semantic-release
     permissions:
       contents: write
@@ -50,4 +71,3 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
-
