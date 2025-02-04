@@ -57,6 +57,21 @@ jobs:
         run: npm clean-install
       - name: Verify the integrity of provenance attestations and registry signatures for installed dependencies
         run: npm audit signatures
+      - name: Sign a fake file
+        run: echo "fake file" > fake-file.txt
+      - name: Import GPG key
+        id: import-gpg
+        uses: crazy-max/ghaction-import-gpg@v6
+        with:
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+      - name: Sign the artifact
+        run: |
+          tar -czf fake-file.txt .
+          gpg --batch --yes --detach-sign --armor --local-user ${{ steps.import-gpg.outputs.fingerprint }} fake-file.txt
+      - name: Verify signature
+        run: |
+          gpg --verify fake-file.asc fake-file.txt
       - name: Login to docker
         run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u filippogurioli --password-stdin
       - name: Release
