@@ -67,11 +67,11 @@ jobs:
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
       - name: Sign the artifact
         run: |
-          tar -czf fake-file.txt .
-          gpg --batch --yes --detach-sign --armor --local-user ${{ steps.import-gpg.outputs.fingerprint }} fake-file.txt
+          tar -czf fake-file.tar.gz fake-file.txt
+          gpg --batch --yes --detach-sign --armor --local-user ${{ steps.import-gpg.outputs.fingerprint }} fake-file.tar.gz
       - name: Verify signature
         run: |
-          gpg --verify fake-file.asc fake-file.txt
+          gpg --verify fake-file.tar.gz.asc fake-file.tar.gz
       - name: Login to docker
         run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u filippogurioli --password-stdin
       - name: Release
