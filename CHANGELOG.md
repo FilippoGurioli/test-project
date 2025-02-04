@@ -1,3 +1,15 @@
+## [1.2.3](https://github.com/FilippoGurioli/test-project/compare/1.2.2...1.2.3) (2025-02-04)
+
+### Bug Fixes
+
+* misconfigured ([b0a83cc](https://github.com/FilippoGurioli/test-project/commit/b0a83cc7bda18e8012758558ddc9c0b11c83853e))
+* try to sign artifact ([a88e58e](https://github.com/FilippoGurioli/test-project/commit/a88e58e0a57c9bb89d474c1b64342c96b1a703e6))
+
+### Style improvements
+
+* improve readability ([4a260e5](https://github.com/FilippoGurioli/test-project/commit/4a260e56f803d9a34377d2b4a495ac0d83e3da23))
+* move token from .properties to ci cd pipeline file ([e430ff0](https://github.com/FilippoGurioli/test-project/commit/e430ff04162eab9a633bc1bc0d0f4d02873280b1))
+
 ## [1.2.2](https://github.com/FilippoGurioli/test-project/compare/1.2.1...1.2.2) (2025-02-01)
 
 ### Documentation
